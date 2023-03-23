@@ -1,0 +1,104 @@
+
+menu.EraseFlash=* Erase Flash
+menu.AutoUploadMode=* Auto Flash Mode
+menu.UploadModeSelection=* Upload Mode
+menu.UploadVideoBin=**      Video ISP Bin
+menu.UploadNeuralNetworkBin=**      Neural Network Bin
+menu.UploadNNOD=***      NN Models Object Detection
+menu.UploadNNFD=***      NN Models Face Detection
+menu.UploadNNFR=***      NN Models Face Recognition
+menu.StdLibInit=* Standard Lib Enable
+
+##############################################################
+# PLEASE DO NOT PUT BOARDS ABOVE THE OFFICIAL AMEBA BOARDS! ##
+##############################################################
+
+Ameba_AMB82-MINI.name=AMB82-MINI
+#Ameba_AMB82-MINI.vid.0=0x1A86
+#Ameba_AMB82-MINI.pid.0=0x7523
+
+Ameba_AMB82-MINI.upload.tool=ameba_pro2_tools
+Ameba_AMB82-MINI.upload.protocol=usb_serial
+Ameba_AMB82-MINI.upload.maximum_size=16777216
+Ameba_AMB82-MINI.upload.use_1200bps_touch=false
+Ameba_AMB82-MINI.upload.wait_for_upload_port=false
+Ameba_AMB82-MINI.upload.native_usb=false
+
+Ameba_AMB82-MINI.build.tarch=Arm-v8M
+Ameba_AMB82-MINI.build.mcu=RTL8735B
+Ameba_AMB82-MINI.build.f_cpu=500000000L
+Ameba_AMB82-MINI.build.usb_product="AMB82-MINI"
+Ameba_AMB82-MINI.build.board=AMEBA
+Ameba_AMB82-MINI.build.core=ambpro2
+#Ameba_AMB82-MINI.build.extra_flags=-DARDUINO_AMBPRO2 -DBOARD_AMB82_MINI {build.usb_flags}
+Ameba_AMB82-MINI.build.ldscript=linker_scripts/gcc/amebapro2_ram_arduino.ld
+Ameba_AMB82-MINI.build.variant=ameba_amb82-mini
+
+Ameba_AMB82-MINI.menu.EraseFlash.Disable=Disable
+Ameba_AMB82-MINI.menu.EraseFlash.Disable.build.erase_flash=Disable
+Ameba_AMB82-MINI.menu.EraseFlash.Enable=Enable
+Ameba_AMB82-MINI.menu.EraseFlash.Enable.build.erase_flash=Enable
+
+Ameba_AMB82-MINI.menu.AutoUploadMode.Disable=Disable
+Ameba_AMB82-MINI.menu.AutoUploadMode.Disable.build.auto_upload_mode=Disable
+Ameba_AMB82-MINI.menu.AutoUploadMode.Enable=Enable
+Ameba_AMB82-MINI.menu.AutoUploadMode.Enable.build.auto_upload_mode=Enable
+
+Ameba_AMB82-MINI.menu.UploadModeSelection.NormalMode=Normal Mode
+Ameba_AMB82-MINI.menu.UploadModeSelection.NormalMode.build.upload_mode=NormalEnable
+Ameba_AMB82-MINI.menu.UploadModeSelection.SpeedMode=Speed Mode
+Ameba_AMB82-MINI.menu.UploadModeSelection.SpeedMode.build.upload_mode=SpeedEnable
+
+Ameba_AMB82-MINI.menu.UploadVideoBin.Yes=Yes
+Ameba_AMB82-MINI.menu.UploadVideoBin.Yes.build.upload_mode_voe=VOEyes
+Ameba_AMB82-MINI.menu.UploadVideoBin.No=No
+Ameba_AMB82-MINI.menu.UploadVideoBin.No.build.upload_mode_voe=VOEno
+
+Ameba_AMB82-MINI.menu.UploadNeuralNetworkBin.Yes=Yes
+Ameba_AMB82-MINI.menu.UploadNeuralNetworkBin.Yes.build.upload_mode_nn=NNyes
+Ameba_AMB82-MINI.menu.UploadNeuralNetworkBin.No=No
+Ameba_AMB82-MINI.menu.UploadNeuralNetworkBin.No.build.upload_mode_nn=NNno
+
+Ameba_AMB82-MINI.menu.UploadNNOD.D_Yolov4Tiny=Default_Yolov4Tiny
+Ameba_AMB82-MINI.menu.UploadNNOD.D_Yolov4Tiny.build.nn_od_model=DYV4
+Ameba_AMB82-MINI.menu.UploadNNOD.D_Yolov3Tiny=Default_Yolov3Tiny
+Ameba_AMB82-MINI.menu.UploadNNOD.D_Yolov3Tiny.build.nn_od_model=DYV3
+Ameba_AMB82-MINI.menu.UploadNNOD.D_Yolov7Tiny=Default_Yolov7Tiny
+Ameba_AMB82-MINI.menu.UploadNNOD.D_Yolov7Tiny.build.nn_od_model=DYV7
+Ameba_AMB82-MINI.menu.UploadNNOD.C_Yolov4Tiny=Customize_Yolov4Tiny
+Ameba_AMB82-MINI.menu.UploadNNOD.C_Yolov4Tiny.build.nn_od_model=CYV4
+Ameba_AMB82-MINI.menu.UploadNNOD.C_Yolov3Tiny=Customize_Yolov3Tiny
+Ameba_AMB82-MINI.menu.UploadNNOD.C_Yolov3Tiny.build.nn_od_model=CYV3
+Ameba_AMB82-MINI.menu.UploadNNOD.C_Yolov7Tiny=Customize_YoloV7Tiny
+Ameba_AMB82-MINI.menu.UploadNNOD.C_Yolov7Tiny.build.nn_od_model=CYV7
+Ameba_AMB82-MINI.menu.UploadNNOD.Disable=Disable
+Ameba_AMB82-MINI.menu.UploadNNOD.Disable.build.nn_od_model=YVNo
+
+Ameba_AMB82-MINI.menu.UploadNNFD.D_MobileFaceNet8=Default_MobileFaceNet8
+Ameba_AMB82-MINI.menu.UploadNNFD.D_MobileFaceNet8.build.nn_fd_model=DM8
+Ameba_AMB82-MINI.menu.UploadNNFD.D_MobileFaceNet16=Default_MobileFaceNet16
+Ameba_AMB82-MINI.menu.UploadNNFD.D_MobileFaceNet16.build.nn_fd_model=DM16
+Ameba_AMB82-MINI.menu.UploadNNFD.C_MobileFaceNet8=Customize_MobileFaceNet8
+Ameba_AMB82-MINI.menu.UploadNNFD.C_MobileFaceNet8.build.nn_fd_model=CM8
+Ameba_AMB82-MINI.menu.UploadNNFD.C_MobileFaceNet16=Customize_MobileFaceNet16
+Ameba_AMB82-MINI.menu.UploadNNFD.C_MobileFaceNet16.build.nn_fd_model=CM16
+Ameba_AMB82-MINI.menu.UploadNNFD.Disable=Disable
+Ameba_AMB82-MINI.menu.UploadNNFD.Disable.build.nn_fd_model=MNo
+
+Ameba_AMB82-MINI.menu.UploadNNFR.D_SCRFD320=Default_SCRFD320
+Ameba_AMB82-MINI.menu.UploadNNFR.D_SCRFD320.build.nn_fr_model=DS32
+Ameba_AMB82-MINI.menu.UploadNNFR.D_SCRFD640=Default_SCRFD640
+Ameba_AMB82-MINI.menu.UploadNNFR.D_SCRFD640.build.nn_fr_model=DS64
+Ameba_AMB82-MINI.menu.UploadNNFR.C_SCRFD320=Customize_SCRFD320
+Ameba_AMB82-MINI.menu.UploadNNFR.C_SCRFD320.build.nn_fr_model=CS32
+Ameba_AMB82-MINI.menu.UploadNNFR.C_SCRFD640=Customize_SCRFD640
+Ameba_AMB82-MINI.menu.UploadNNFR.C_SCRFD640.build.nn_fr_model=CS64
+Ameba_AMB82-MINI.menu.UploadNNFR.Disable=Disable
+Ameba_AMB82-MINI.menu.UploadNNFR.Disable.build.nn_fr_model=SNo
+
+Ameba_AMB82-MINI.menu.StdLibInit.Disable=NA
+Ameba_AMB82-MINI.menu.StdLibInit.Disable.build.extra_flags=-DARDUINO_SDK -DARDUINO_AMBPRO2 -DBOARD_AMB82_MINI {build.usb_flags}
+Ameba_AMB82-MINI.menu.StdLibInit.Enable=Arduino_STD_PRINTF
+Ameba_AMB82-MINI.menu.StdLibInit.Enable.build.extra_flags=-DARDUINO_SDK -DARDUINO_AMBPRO2 -DBOARD_AMB82_MINI {build.usb_flags} -DArduino_STD_PRINTF
+
+##############################################################
